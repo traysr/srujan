@@ -5,7 +5,7 @@ title:               Satyakam Khadilkar
 tagline:             ''
 description:         ''
 url:                 'http://traysr.github.io/srujan/'
-baseurl:             'srujan'
+baseurl:             '/srujan'
 
 # About/contact
 author:
