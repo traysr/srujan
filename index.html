@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+<div class="introduction">
+
+<div class="toc">
+  <h2>Posts</h2>
+  <ul class="post">
+  {% for item in site.texts reversed do %}
+  
+    <li class="post-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>  
+
+</div>
+
+
+

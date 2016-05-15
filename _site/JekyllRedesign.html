@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="/JekyllRedesign"/>
+
+  <!-- Basic meta elements -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+
+  <!--   Dublin Core metadata for Zotero -->  
+  <meta name="DC.title" content="Fresh Start With Jekyll" />
+  <meta name="DC.creator" content="" />
+  <meta name="DC.contributor" content="" />
+  <meta name="DC.date" content="" />
+  <meta name="DC.rights" content="" />
+  <meta name="DC.source" content="Satyakam Khadilkar" />
+  
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Fresh Start With Jekyll"/>
+  <meta property="og:author" content=""/>
+  <meta property="og:book:release_date" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.srujan.org"/>
+  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+   
+  <title>
+    
+      Fresh Start With Jekyll
+    
+  </title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/public/css/ed.css"/>
+ 
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-precomposed.png"/>
+  <link rel="shortcut icon" href="/public/favicon.ico"/>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"/>
+</head>
+
+
+  <body>
+
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/search/">Search</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+
+  </nav>
+
+</div>
+
+    
+
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Satyakam Khadilkar</a>
+            <br><small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content" id="main">
+        <div class="post">
+  <h1 class="post-title">Fresh Start With Jekyll</h1>
+  <p>I discovered <a href="http://www.jekyllrb.com">Jekyll</a> a few days ago, and it has been the best experience for blogging and website creation so far.</p>
+
+<p>I moved from <a href="http://www.blogger.com">Blogger</a> to <a href="http://www.wordpress.org">Wordpress</a> to have more control over the layout of my website. At the time (around 2005) it seemed quite natural to use a blogging platform for website creation. The pros were doing it, and there seemed nothing wrong in it. I wanted much more than a blog and I was prepared to learn code and apply some hacks to build a whole site out of Wordpress. This all seems stupid in retrospect. I can’t imagine why I used a database to store the content of a website, other than the blog posts, but I did.</p>
+
+<p>For a short time, I did even more convoluted things. I used <a href="http://www.realmacsoftware.com/rapidweaver/overview/">RapidWeaver</a> to build the site and integrate my Wordpress blog in it using a plugin.</p>
+
+<p>While going through all these hacks, I always dreamt of a software than can allow me write my content in simple text and run some text manipulation on it to generate a site. I was not interested in writing these scripts myself and maybe I did not look hard enough on the internet. Anyways, Jekyll seems to have everything that I wanted.</p>
+
+<p><em>So What is Jekyll ?</em></p>
+
+<p>Jekyll is a static website generator that uses some magic ruby scripts to combine your pages and posts written in <a href="http://daringfireball.net/projects/markdown/">markdown</a> with the page layouts to generate the webpages statically. You can then upload these static pages to your site and you are done. The <em>static</em> aspect of this is great if you like to roll your own pages. No more learning Wordpress loop only to break it. Your pages are literally in your control.</p>
+
+<p>As a bonus, I got to enjoy a few more things. I always wanted a clean minimalistic look, but it was hard to find any ready clean  Wordpress templates. The problem is, the ones available for free are not that good and the ones available for buying are not really minimalistic (Why would somebody buy a template that does not have any bells and whistles). The <a href="http://www.informationarchitects.jp/en/ia3/">iA3 template</a> came close enough and I did enjoy it. However, I wanted to go more minimal. I finally found out a cool minimal starting point from <a href="https://github.com/bobschi/HTML5-Boilerplate-Jekyll-Template">Florian Holzner</a> based on <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> and <a href="http://stuffandnonsense.co.uk/projects/320andup/">320 and up</a> for responsive layout. The other bonus is that, I get to write my posts in <a href="http://www.iawriter.com/">iA Writer</a>, the minimalistic writer that I love, but could not use much to write my Wordpress posts earlier.</p>
+
+<p>At this point, I haven’t made many changes to the parent template, apart from a few font-type changes and cleanup. I plan to modify this to make the blog more picture friendly to include my artwork and photographs without loosing its clean minimalistic nature.</p>
+
+</div>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+
+    // Highlight search Query
+    var url = window.location.href;
+      if (url.lastIndexOf("?q=") > 0) {
+        // get the index of the parameter, add three (to account for length)
+        var stringloc = url.lastIndexOf("?q=") + 3;
+        // get the substring (query) and decode
+        var searchquery = decodeURIComponent(url.substr(stringloc));
+        // regex matches at beginning of line, end of line or word boundary, useful for poetry
+        var regex = new RegExp("(?:^|\\b)(" + searchquery + ")(?:$|\\b)", "gim");
+        // get, add mark and then set content
+        var content = document.getElementById("main").innerHTML;
+        document.getElementById("main").innerHTML = content.replace(regex, "<mark>$1</mark>");
+      }
+
+    // Toggle sidebar  
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

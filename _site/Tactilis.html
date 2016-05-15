@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="/Tactilis"/>
+
+  <!-- Basic meta elements -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+
+  <!--   Dublin Core metadata for Zotero -->  
+  <meta name="DC.title" content="Tactilis" />
+  <meta name="DC.creator" content="" />
+  <meta name="DC.contributor" content="" />
+  <meta name="DC.date" content="" />
+  <meta name="DC.rights" content="" />
+  <meta name="DC.source" content="Satyakam Khadilkar" />
+  
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Tactilis"/>
+  <meta property="og:author" content=""/>
+  <meta property="og:book:release_date" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.srujan.org"/>
+  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+   
+  <title>
+    
+      Tactilis
+    
+  </title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/public/css/ed.css"/>
+ 
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-precomposed.png"/>
+  <link rel="shortcut icon" href="/public/favicon.ico"/>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"/>
+</head>
+
+
+  <body>
+
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/search/">Search</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+
+  </nav>
+
+</div>
+
+    
+
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Satyakam Khadilkar</a>
+            <br><small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content" id="main">
+        <div class="post">
+  <h1 class="post-title">Tactilis</h1>
+  <p>My iPad app, <a href="http://www.tactilisapp.com">Tactilis</a> is now on app store. Wanted to write about the making of the app. There is lot to write, but I will give a brief intro here about the tactilis app philosophy. Would like to go in detail later.</p>
+
+<p>Here are a few concepts that were in my mind during the development of app.</p>
+
+<h3 id="power-of-non-editable-content">Power of non-editable content</h3>
+<p>One of the basic things that a computer brings to us is the editable content. The power of using a text editor is being able to edit text. The power in a vector editor is to be able to change attributes of your shapes. These features are mandatory for creating content that you may wish to edit in future. However, there are a few instances where our main focus is on adding the content rather than editing it. A classic example is taking notes, doodling or chalking out your thoughts. When thoughts are flowing out of our mind they do not come out as ASCII or Unicode text, or as line segments or bezier curves. They could come in any arbitrary mixture from the literal and visual part of the brain. Capturing these thoughts through keyboard input and word processor commands slows them down a bit. At this very moment while writing this post I am wondering about adding a star somewhere or quickly underlining something. To do any of these tasks you have to pause your thoughts a bit and divert your attention to toolbar or think about the keyboard shortcuts. Apart from this there are many other things like mathematical equations, scientific formulae or just the quick diagrams that cannot be as easily created while using the computer. In these instances, a traditional pen and paper is still preferred.</p>
+
+<p>Tactilis was an attempt to give iPad the same power as pen and paper while adding other features like the ability to mail instantly which would not be easily possible with traditional pen and paper.</p>
+
+<h3 id="natural-gestures">Natural gestures</h3>
+<p>We are all impressed by the ‘Minority Report’ interface of hand gestures. One of the basic reason we like it is that the interface is similar to our natural way of communicating. When we talk to a person we do certain hand gestures. We are all aware of the power of ten fingers and two hands. However when using a computer with a mouse we lose nine fingers and a hand. All our power of communicating is reduced to one hand and a finger. All vector applications were created in the age of mouse and so that bias is being carried over. Most of the recent vector apps on iPad use single touch for the main content entry. With the advent of multitouch this area is open to lot of possibilities. The virtual ruler and compass in tactilis is my first basic attempt at using multitouch to define vector content. Of course, tactilis is not a vector app, but there us no reason why those gestures cannot be used in a vector app.</p>
+
+<p>Here is a short demo</p>
+
+<p>https://www.youtube.com/watch?v=7hR2ZQ1fjVo</p>
+
+</div>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+
+    // Highlight search Query
+    var url = window.location.href;
+      if (url.lastIndexOf("?q=") > 0) {
+        // get the index of the parameter, add three (to account for length)
+        var stringloc = url.lastIndexOf("?q=") + 3;
+        // get the substring (query) and decode
+        var searchquery = decodeURIComponent(url.substr(stringloc));
+        // regex matches at beginning of line, end of line or word boundary, useful for poetry
+        var regex = new RegExp("(?:^|\\b)(" + searchquery + ")(?:$|\\b)", "gim");
+        // get, add mark and then set content
+        var content = document.getElementById("main").innerHTML;
+        document.getElementById("main").innerHTML = content.replace(regex, "<mark>$1</mark>");
+      }
+
+    // Toggle sidebar  
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
