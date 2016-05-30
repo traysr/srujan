@@ -1,0 +1,86 @@
+---
+layout: default
+---
+		<!-- Page main wrapper -->
+		<div id="main-content" class="blog-grid">
+			<div class="page-wrapper">
+
+				<!-- Page main content-->
+				<div class="page-main blog-list">
+
+				    <!-- blog grid wrapper -->  
+				    <div class="grid-blog-list">
+				        
+				        {% for item in paginator.posts do %}
+				        <!-- post Item -->      
+				        <div class="post">
+				            <div class="post-wrapper">
+				                {% if item.images %}
+				                <div class="image-wrapper">
+				                    <a href="{{ site.baseurl }}{{ item.url }}">
+				                        <img src="{{ site.baseurl }}/assets/img/blog/g01.jpg" alt="alt" class="img-responsive">    
+				                    </a>
+				                </div>
+				                {% endif %}
+				                <div class="post-content-wrapper">
+				                    <!-- post title -->
+				                    <h3 class="post-header"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h3>
+				                    
+				                    <!-- post meta -->
+				                    <div class="post-meta">                 
+				                        <span class="date-span">
+				                            <i class="fa fa-lg fa-clock-o"></i>
+				                            <a href="#">{{ item.date | date: '%B %d, %Y' }}</a>
+				                        </span>
+<!-- 				                        <span class="comments-cat">
+				                            <i class="fa fa-lg fa-folder"></i>
+				                            <a href="#">Design</a>
+				                        </span> -->
+				                    </div>
+
+				                    <!-- post content -->
+				                    <div class="post-main-content">
+				                        {{ item.excerpt }}
+				                    </div>
+
+				                </div>
+				            </div>
+				        </div>
+				        <!--/ post Item -->
+				        {% endfor %}
+
+
+				    </div>
+				    <div id="columns-separator"></div>
+				    <!--/ Blog grid wrapper -->
+
+				    <!-- Blog navigation -->
+				      {% if paginator %}
+					    <div id="post-nav">
+				          {% if paginator.next_page %}
+				            {% if paginator.next_page == 1 %}
+				              <a href="{{ site.baseurl }}/" class="prev-post btn btn-lg btn-simple">Prev</a>
+				            {% else %}
+				              <a href="{{ site.baseurl }}/page{{ paginator.next_page }}" class="prev-post btn btn-lg btn-simple">Prev</a>
+				            {% endif %}
+				          {% else %}
+				            <!-- <span class="older">Older Entries</span> -->
+				          {% endif %}
+				          {% if paginator.previous_page %}
+				            {% if paginator.previous_page == 1 %}
+				              <a href="{{ site.baseurl }}/" class="prev-post btn btn-lg btn-simple pull-right">Next</a>
+				            {% else %}
+				              <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}" class="prev-post btn btn-lg btn-simple pull-right">Next</a>
+				            {% endif %}
+				          {% else %}
+				            <!-- <span class="newer">Newer Entries</span> -->
+				          {% endif %}
+				        </div>
+				      {% endif %}
+				    <!--/ Blog navigation -->   
+
+				</div>
+				<!-- /Page main content-->
+
+			</div>
+		</div>

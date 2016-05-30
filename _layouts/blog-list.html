@@ -1,0 +1,43 @@
+---
+layout: default
+---
+		<!-- Page main wrapper -->
+		<div id="main-content" class="dark-template blog-minimal">
+			<div class="page-wrapper">
+
+				<div class="container">
+
+					<!-- Page title -->
+					<div class="page-title">
+						<h1 class="title">Journal</h1>
+					</div>
+					<!-- /Page title -->
+
+
+					<!-- Blog List -->
+					<div id="blog-list">
+					{% for item in paginator.posts do %}
+
+						<!-- Post item -->
+						<div class="post-item">
+							<div class="post-body">
+								<span class="post-meta">{{ item.date | date: '%B %d, %Y' }}</span>
+								<h2 class="post-title"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
+								<div class="post-content">
+									<p>{{ item.excerpt }}</p>
+								</div>
+							</div>
+						</div>
+						<!-- /Post item -->
+						
+					{% endfor %}
+					</div>
+					<!-- /Blog List -->
+
+
+				</div>
+
+
+			</div>
+		</div>
+		<!-- /Page main wrapper -->

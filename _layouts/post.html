@@ -1,8 +1,76 @@
 ---
 layout: default
 ---
+		<!-- Page main wrapper -->
+		<div id="main-content">
+			<div class="page-wrapper">
+				<div id="blog-single">
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  {{ content }}
-</div>
+					<!-- Post header -->
+					<div id="post-header" class="parallax-parent">
+
+						<!-- Header image -->
+						{% if page.images %}
+						<div class="header-cover set-bg">
+							<img src="assets/img/blog/header-1.jpg" alt="">
+						</div>
+						{% endif %}
+						<!-- /Header image -->
+
+						<!-- Header content -->
+						<div class="header-content tj-parallax" data-ratio="1">
+							<div class="container">
+								<h1 class="post-title">
+									{{ page.title }}
+								</h1>
+							</div>
+						</div>
+						<!-- /Header content -->
+
+					</div>
+					<!-- /Post header -->
+
+					<div class="container">
+
+						<!-- Post body -->
+						<div id="post-body">
+							<div class="row">
+
+								<!-- Post main area -->
+								<div class="col-md-10">
+
+									<!-- Post Content -->
+									<div id="post-content">
+									<div class="post-content-wrapper">
+									<h2 class="post-header lined">
+									{{ page.title }}
+									</h2>
+								    <div class="post-date"><i class="fa fa-calendar-o list-icon"></i> {{ page.date  | date: '%B %d, %Y' }}</div>
+								    <br/>
+										{{ content }}
+									</div>
+									</div>
+									<!-- /Post Content -->
+
+									<!-- Post Navigation -->
+									<div id="post-nav">
+									{% if page.previous.url %}
+										<a class="prev-post btn btn-lg btn-simple" href="{{ site.baseurl }}{{page.previous.url}}">Prev</a>
+									{% endif %}
+									{% if page.next.url %}
+										<a class="prev-post btn btn-lg btn-simple pull-right" href="{{ site.baseurl }}{{page.next.url}}">Next</a>
+									{% endif %}
+									</div>
+									<!-- /Post Navigation -->
+
+								</div>
+								<!-- /Post main area -->
+		
+							</div>
+						</div>
+						<!-- /Post body -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Page main wrapper -->

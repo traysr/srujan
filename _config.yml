@@ -4,14 +4,14 @@
 title:               Satyakam Khadilkar
 tagline:             ''
 description:         ''
-url:                 'www.srujan.org'
+url:                 'http://www.srujan.org'
 baseurl:             ''
 
 # About/contact
 author:
-  name:              Ochre Red
+  name:              Satyakam Khadilkar
   url:               
-  email:             
+  email:             satyakam@me.com
 
 # Permalinks
 
@@ -20,11 +20,6 @@ permalink: /:title/
 
 # Set encoding to UTF-8
 encoding: utf-8
-
-# Collections for texts
-collections:
-  texts:
-    output: true
 
 # Markdown specs
 markdown: kramdown
@@ -42,6 +37,7 @@ kramdown:
 version:             0.0.6
 
 # Exclusions from the final site
-exclude: [optional, vendor]
+exclude: [optional, vendor, sketch]
 
-
+gems: [jekyll-paginate]
+paginate: 10

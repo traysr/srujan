@@ -1,0 +1,25 @@
+---
+layout: fullscreen
+---
+<script src="{{ site.baseurl }}/assets/threejs/three.min.js"></script>
+<script>
+var renderer = new THREE.WebGLRenderer();
+var fullscreen = $("#fullscreen");
+renderer.setSize( fullscreen.width(), fullscreen.height() );
+fullscreen.append( renderer.domElement );
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+
+	var fullscreen = $("#fullscreen");
+    camera.aspect = fullscreen.width() / fullscreen.height();
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( fullscreen.width(), fullscreen.height() );
+
+}
+
+</script>
+
+{{ content }}
